@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- swipe css -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <!-- xeicon -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+  />
+  <!-- reset css -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="section02.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+   <!-- 섹션02 추천도서(recommended-books) -->
+   <section class="recommended-books">
+      <div class="inner recommended-inner">
+        <!-- 표지판 -->
+        <div class="book-sign"></div>
+        <!-- 코르크 보드 스와이퍼 -->
+        <div class="board">
+          <div class="slider">
+            <div class="board-inner">
+                <ul class="swiper-wrapper slide_list">
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <img src="img/section02-img/chat-GPT.jpg" alt="">
+                        <div class="board-desc">
+                          <p>
+                            GPT 제너레이션:<br>챗GPT가 바꿀 인류의 미래
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <img src="img/section02-img/haker.jpg" alt="">
+                        <div class="board-desc">
+                          <p>
+                            해커를 위한 디자인 레슨
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <img src="img/section02-img/core-js.jpg" alt="">
+                        <div class="board-desc">
+                          <p>
+                            코어 자바스크립트 
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <img src="img/section02-img/nodejs.jpg" alt="">
+                        <div class="board-desc">
+                          <p>
+                            생활코딩!Node.js<br>노드제이에스 프로그래밍 
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+          <span class="btn btn_prev">이전</span>
+          <span class="btn btn_next">다음</span>
+          <span class="paginationCount"></span>
+        </div>
+      </div>                 
+   </section>
+
+  <!-- jquery cdn-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!-- swipe js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="section02-recommend.js"></script>
+</body>
+</html>
